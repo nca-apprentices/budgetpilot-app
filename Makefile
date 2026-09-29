@@ -1,5 +1,5 @@
 SCHEME    = ncaswift
-SIM       = iPhone 18 Pro
+SIM       = $(shell scripts/pick-simulator.sh)
 DERIVED   = .build
 APP       = $(DERIVED)/Build/Products/Debug-iphonesimulator/ncaswift.app
 BUNDLE_ID = ch.ncaswift.app
@@ -19,7 +19,7 @@ format-check:
 	swiftformat --lint Sources
 
 build: generate
-	xcodebuild build -scheme $(SCHEME) -destination 'platform=iOS Simulator,name=$(SIM)' -derivedDataPath $(DERIVED)
+	xcodebuild build -scheme $(SCHEME) -destination 'generic/platform=iOS Simulator' -derivedDataPath $(DERIVED)
 
 test: generate
 	xcodebuild test -scheme $(SCHEME) -destination 'platform=iOS Simulator,name=$(SIM)' -derivedDataPath $(DERIVED)
