@@ -1,0 +1,36 @@
+name: ncaswift
+fileGroups:
+  - project.yml
+  - Makefile
+  - README.md
+  - .swiftlint.yml
+  - .swiftformat
+  - .editorconfig
+  - .github
+options:
+  bundleIdPrefix: ch.ncaswift
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  Algorithms:
+    url: https://github.com/apple/swift-algorithms
+    from: 1.2.0
+targets:
+  ncaswift:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/ncaswift
+    dependencies:
+      - package: Algorithms
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ch.ncaswift.app
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: ncaswift
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO

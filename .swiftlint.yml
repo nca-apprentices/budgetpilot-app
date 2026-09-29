@@ -1,0 +1,10 @@
+included:
+  - Sources
+
+excluded:
+  - .build
+  - ncaswift.xcodeproj
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
