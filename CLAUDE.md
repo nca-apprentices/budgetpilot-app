@@ -94,6 +94,12 @@ Forderungen, Wunschliste, Sparziel/Verlauf usw.), ist Zielbild für später —
 ob und wann das tatsächlich drankommt, entscheidet sich erst während der
 Entwicklung.
 
+**Minimal Likable Product, nicht nur Minimal Viable Product.** Bei diesen
+ersten Bausteinen zählt nicht nur, dass sie technisch funktionieren, sondern
+auch die Qualität der Umsetzung — Bedienbarkeit, Reaktionsgeschwindigkeit,
+Verständlichkeit der KI-Antworten. Lieber ein Feature nach dem anderen sauber
+fertigstellen, statt mehrere gleichzeitig nur oberflächlich anzureissen.
+
 ## Leitplanken aus dem POC (produktrelevant, nicht technisch)
 
 - **KI schlägt vor, entscheidet aber nie endgültig.** Jede automatisch
