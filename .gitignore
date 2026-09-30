@@ -2,3 +2,7 @@
 ncaswift.xcodeproj/
 DerivedData/
 .DS_Store
+
+# IDE-Projektdateien — persönlicher Editor-Zustand, nicht teilen
+.idea/
+.vscode/
